@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/notion-proxy.php", "destination": "/api/notion-proxy" },
+    { "source": "/notion-proxy",     "destination": "/api/notion-proxy" }
+  ]
+}
