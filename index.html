@@ -7,6 +7,8 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍮</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://api.notion.com">
+  <link rel="dns-prefetch" href="https://s3.us-west-2.amazonaws.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Fecolato Doces — Catálogo</title>
 <style>
@@ -375,8 +377,6 @@ a { text-decoration:none; }
    API não estiver acessível (ex: abrir local).
    ════════════════════════════════════════════════ */
 
-const NOTION_TOKEN = "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";
-const NOTION_DB_ID = "609e5deb1634496da3ec0e86e3851f42";
 
 /* ── Dados de fallback (usados se API falhar) ── */
 const FALLBACK = [

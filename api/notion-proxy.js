@@ -6,6 +6,7 @@ const DB_ID = process.env.NOTION_DB_ID;
 module.exports = (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate=300');
 
   const body = JSON.stringify({
     filter: { property: 'Ativo', checkbox: { equals: true } },
